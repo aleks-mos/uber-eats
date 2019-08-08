@@ -42,10 +42,10 @@ a {
   margin-right: 0;
 }
 
-.location {
+.location,
+.location--hidden {
   display: flex;
   align-items: center;
-  font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: 300;
   line-height: normal;
@@ -57,13 +57,17 @@ a {
     text-align: center;
     width: 65px;
     height: 40px;
-    font-family: Roboto, sans-serif;
     font-style: normal;
     font-weight: normal;
     color: #1d1d1d;
     border: 1px solid #e0e0e0;
     border-radius: 2px;
   }
+}
+
+.location--hidden {
+  // margin-top: 45px;
+  display: none;
 }
 
 .location__to {
@@ -79,12 +83,21 @@ a {
   padding-left: 36px;
 }
 
-.long__input_img {
+.long__input_img,
+.long__input_img--two {
   position: absolute;
   bottom: 14px;
-  left: 114px;
+  // left: 114px;
   width: 12px;
   height: 15px;
+}
+
+.long__input_img {
+  left: 114px;
+}
+
+.long__input_img--two {
+  left: 168px;
 }
 
 .long__input::-webkit-input-placeholder {
@@ -394,10 +407,6 @@ a {
     width: 109px;
   }
 
-  .long__input {
-    width: 165px;
-  }
-
   .main__cards {
     grid-template-rows: repeat(9, 1fr);
     grid-template-columns: 1fr;
@@ -418,6 +427,11 @@ a {
 
   .location {
     display: none;
+  }
+
+  .location--hidden {
+    margin-top: 45px;
+    display: block;
   }
 
   .app-stores {

@@ -19,7 +19,7 @@
           </a>
         </div>
         <form class="location" action="/search">
-          <input class="short__input" name="when" type="text" value="ASAP">
+          <input class="short__input" name="when" type="text" placeholder="ASAP">
           <label class="location__to" for="location">to</label>
           <input class="long__input" type="text" id="location" name="location"
            placeholder="ul. Bolshaya Dmitrov">
@@ -39,6 +39,16 @@
           <img class="search__restaurant_img" src="images/icons/search.svg" alt="search">
         </div>
         <div class="bottom-line"></div>
+
+        <form class="location--hidden" action="/search">
+          <label class="when" for="when">When</label>
+          <input class="short__input" name="when" type="text" id="when" placeholder="ASAP">
+          <label class="location__to" for="location--two">To</label>
+          <input class="long__input" type="text" id="location--two" name="location"
+           placeholder="ul. Bolshaya Dmitrov">
+          <img class="long__input_img--two" src="images/icons/location.svg" alt="location">
+        </form>
+
         <h1 class="main-item">Kyiv Restaurants</h1>
 
         <div class="main__cards">
